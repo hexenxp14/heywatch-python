@@ -9,7 +9,7 @@ METADATA = dict(
   author_email='bruno@particle-s.com',
   description='A python wrapper around the HeyWatch API',
   license='MIT License',
-  url='http://heywatch.com',
+  url='http://www.heywatchencoding.com',
   keywords='heywatch api',
 	long_description="""Client Library for encoding Videos with HeyWatch
 
@@ -19,14 +19,14 @@ For a CLI, look at the ruby version: http://github.com/particles/heywatch-ruby
 
 For more information:
 
-* HeyWatch: http://heywatch.com
-* API Documentation: http://dev.heywatch.com
+* HeyWatch: http://www.heywatchencoding.com
+* API Documentation: http://www.heywatchencoding.com/documentation
 * Twitter: @particles / @sadikzzz
 
 Changelogs
 
 1.0.1
-Return True instead of '' in update and delete method
+Return True instead of '' in update and delete methods
 
 """
 )
