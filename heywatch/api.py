@@ -95,7 +95,13 @@ class API(object):
         """ Create a resource with the give data
             hw.create('download', url='http://site.com/video.mp4', title='testing')
         """
-        return self.request('/' + resource, 'POST', body=urllib.urlencode(data))
+        body = ''
+        if resource == 'robot/job':
+            body = data['body']
+        else:
+            body = urllib.urlencode(data)
+
+        return self.request('/' + resource, 'POST', body=body)
 
     def update(self, resource, id, **data):
         """ Update an object by giving its resource and ID
