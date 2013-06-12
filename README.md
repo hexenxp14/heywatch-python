@@ -9,7 +9,7 @@ For more information:
 * HeyWatch: http://www.heywatchencoding.com
 * API Documentation: http://www.heywatchencoding.com/documentation
 * Contact: [heywatch at particle-s.com](mailto:heywatch at particle-s.com)
-* Twitter: [@particles](http://twitter.com/particles) / [@sadikzzz](http://twitter.com/sadikzzz)
+* Twitter: [@heywatch](http://twitter.com/heywatch) / [@sadikzzz](http://twitter.com/sadikzzz)
 
 ## Install ##
 
@@ -118,13 +118,10 @@ For more information:
 
 ### Generating thumbnails ###
 
-	# Will return the binary data directly
-	hw.jpg(9662142)
-	hw.jpg(9662142, start=4)
-
-	# Async method, you'll receive the thumbnails to
+	# You'll receive the thumbnails to
 	# your s3 account and get pinged when it's done
-	hw.jpg(9662142, async=true, number=6, s3_directive='s3://accesskey:secretkey@mybucket/thumbnails/', ping_url='http://site.com/ping/heywatch/thumbs')
+
+	hw.create('preview/thumbnails', media_id=9662142, number=6, s3_directive='s3://accesskey:secretkey@mybucket/thumbnails/', ping_url='http://site.com/ping/heywatch/thumbs')
 
 	➔ True
 

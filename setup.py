@@ -3,7 +3,7 @@ import sys, os
 
 METADATA = dict(
   name = 'heywatch',
-  version = '1.0.1',
+  version = '1.1.0',
   py_modules = ['heywatch.api'],
   author='Bruno Celeste',
   author_email='bruno@particle-s.com',
@@ -21,9 +21,12 @@ For more information:
 
 * HeyWatch: http://www.heywatchencoding.com
 * API Documentation: http://www.heywatchencoding.com/documentation
-* Twitter: @particles / @sadikzzz
+* Twitter: @heywatch / @sadikzzz
 
 Changelogs
+
+1.1.0
+Added support of Robot API
 
 1.0.1
 Return True instead of '' in update and delete methods
