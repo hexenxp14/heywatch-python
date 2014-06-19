@@ -127,6 +127,11 @@ class API(object):
             raise BadRequest(response['status'] + " " + content)
 
         if len(content) > 0 and re.search('json', response['content-type']):
-            return json.loads(content)
+            try:
+                json_object = json.loads(content)
+            except ValueError:
+                print "WARNING empty response:", content
+                json_object = True
+            return json_object
         else:
             return content
